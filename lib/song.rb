@@ -14,13 +14,15 @@ class Song
   end
   
   def self.create(new_name)
-    new_song = Song.new_song
-    new_song.name = new_name 
-    return new_name
+    new_song = Song.new
+    new_song.save 
+    return new_song
   end
   
-  def self.new_by_name
-    @name
+  def self.new_by_name(new_song)
+    new_song = Song.new
+    new_song.name = new_name 
+    return new_song
   end
   
   def self.find_by_name 
