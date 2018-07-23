@@ -22,5 +22,17 @@ class Song
   def self.new_by_name
     
   end
+  
+  def self.find_by_name 
+  end
+  
+  def self.create_by_name 
+  end
+  
+  def self.alphabetical
+  end 
+  
+  def self.new_from_filename
+  end
 
 end
