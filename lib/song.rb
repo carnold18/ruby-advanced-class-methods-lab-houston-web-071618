@@ -29,7 +29,7 @@ class Song
   
   def self.find_by_name 
     @@all.find do |song|
-      song.name == song_name
+      song.name == new_name
     end
   end
   
