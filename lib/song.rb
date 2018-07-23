@@ -1,3 +1,5 @@
+require 'pry'
+
 class Song
   attr_accessor :name, :artist_name
   @@all = []
@@ -13,7 +15,7 @@ class Song
   def self.find_or_create_by_name
   end
   
-  def self.create(new_name)
+  def self.create
     new_song = Song.new
     new_song.save 
     return new_song
