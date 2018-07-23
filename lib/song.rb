@@ -18,6 +18,7 @@ class Song
       song_f
     else
       self.create_by_name(new_name)
+    end
   end
   
   def self.create
