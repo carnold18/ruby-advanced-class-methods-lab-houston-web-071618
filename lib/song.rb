@@ -33,8 +33,11 @@ class Song
     end
   end
   
-  def self.create_by_name 
-    @name
+  def self.create_by_name(new_name)
+    new_song = Song.new
+    new_song.name = new_name
+    new_song.save
+    return new_song
   end
   
   def self.alphabetical
