@@ -12,7 +12,12 @@ class Song
     self.class.all << self
   end
   
-  def self.find_or_create_by_name
+  def self.find_or_create_by_name(new_name)
+    song_f = self.find_by_name(new_name)
+    if song_f != nil 
+      song_f
+    else
+      self.create_by_name(new_name)
   end
   
   def self.create
