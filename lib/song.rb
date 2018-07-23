@@ -28,6 +28,9 @@ class Song
   end
   
   def self.find_by_name 
+    @@all.find do |song|
+      song.name == song_name
+    end
   end
   
   def self.create_by_name 
